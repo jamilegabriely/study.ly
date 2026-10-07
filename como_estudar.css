@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #0b0e14;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 40px;
+
+    background-color: #161c24;
+    border-bottom: 1px solid #232d3b;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.voltar {
+    color: #cbd5e1;
+    text-decoration: none;
+
+    padding: 8px 16px;
+
+    background-color: #0b0e14;
+    border: 1px solid #232d3b;
+    border-radius: 12px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.voltar:hover {
+    background-color: #00e676;
+    color: #0b0e14;
+}
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+main {
+    width: 92%;
+    max-width: 1100px;
+
+    margin: 25px auto 60px;
+
+    background-color: #161c24;
+
+    border: 1px solid #232d3b;
+    border-radius: 28px;
+
+    padding: 40px;
+
+    box-shadow:
+        0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================
+   TÍTULO
+========================= */
+
+.study-header {
+    margin-bottom: 40px;
+}
+
+.study-header h1 {
+    font-size: 32px;
+    font-weight: 800;
+
+    color: #ffffff;
+
+    margin-bottom: 10px;
+}
+
+.study-header p {
+    font-size: 16px;
+    color: #94a3b8;
+}
+
+/* =========================
+   REGRA 80/20
+========================= */
+
+.study-card {
+    background-color: #0b0e14;
+
+    border: 1px solid #232d3b;
+    border-left: 4px solid #00e676;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    margin-bottom: 40px;
+}
+
+.study-card h2 {
+    font-size: 24px;
+    color: #ffffff;
+
+    margin-bottom: 20px;
+}
+
+.rule {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+
+    margin: 25px 0;
+}
+
+.theory,
+.practice {
+    padding: 12px 20px;
+
+    border-radius: 12px;
+
+    font-weight: 700;
+}
+
+.theory {
+    background-color: #1e293b;
+    color: #ffffff;
+}
+
+.practice {
+    background-color: #00e676;
+    color: #0b0e14;
+}
+
+.plus {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.study-card h3 {
+    color: #38bdf8;
+    font-size: 18px;
+
+    margin: 20px 0 10px;
+}
+
+.study-card p {
+    color: #94a3b8;
+}
+
+/* =========================
+   PRÁTICA
+========================= */
+
+.practice-section {
+    margin-bottom: 40px;
+}
+
+.practice-section > h2 {
+    font-size: 24px;
+    color: #ffffff;
+
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+
+    border-bottom: 2px solid #00e676;
+
+    display: inline-block;
+}
+
+.practice-section > p {
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   DESAFIOS
+========================= */
+
+.challenge {
+    background-color: #0b0e14;
+
+    border: 1px solid #232d3b;
+    border-left: 4px solid #00e676;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    margin: 20px 0;
+}
+
+.challenge .level {
+    display: inline-block;
+
+    color: #00e676;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.challenge h3 {
+    color: #ffffff;
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+.challenge > p {
+    color: #94a3b8;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   CAIXA DO DESAFIO
+========================= */
+
+.challenge-box {
+    background-color: #161c24;
+
+    border: 1px solid #232d3b;
+    border-radius: 12px;
+
+    padding: 18px;
+
+    margin: 20px 0;
+}
+
+.challenge-box strong {
+    color: #ffffff;
+}
+
+.challenge-box p {
+    color: #94a3b8;
+    margin-top: 5px;
+}
+
+/* =========================
+   TEXTAREA
+========================= */
+
+textarea {
+    width: 100%;
+    min-height: 130px;
+
+    resize: vertical;
+
+    background-color: #0b0e14;
+
+    border: 1px solid #232d3b;
+    border-radius: 12px;
+
+    padding: 15px;
+
+    color: #ffffff;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+    margin-bottom: 15px;
+}
+
+textarea::placeholder {
+    color: #64748b;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #00e676;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+button,
+.continue-btn {
+    display: inline-block;
+
+    background-color: #00e676;
+    color: #0b0e14;
+
+    border: none;
+    border-radius: 12px;
+
+    padding: 11px 18px;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+button:hover,
+.continue-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================
+   RESPOSTAS
+========================= */
+
+.answer {
+    display: none;
+
+    margin-top: 20px;
+
+    background-color: #161c24;
+
+    border: 1px solid #232d3b;
+    border-radius: 12px;
+
+    padding: 20px;
+}
+
+.answer strong {
+    color: #00e676;
+}
+
+.answer ol {
+    margin: 12px 0 0 25px;
+
+    color: #94a3b8;
+}
+
+/* =========================
+   FLUXOGRAMA
+========================= */
+
+.flowchart {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.flow {
+    display: inline-block;
+
+    background-color: #161c24;
+
+    border: 1px solid #232d3b;
+    border-radius: 12px;
+
+    padding: 12px 22px;
+
+    font-weight: 700;
+}
+
+.arrow {
+    margin: 10px;
+    color: #00e676;
+
+    font-size: 24px;
+}
+
+.flow-options {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 25px;
+}
+
+.flow-options span {
+    display: block;
+
+    color: #38bdf8;
+
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+/* =========================
+   CÓDIGO
+========================= */
+
+pre {
+    background-color: #0b0e14;
+
+    border: 1px solid #232d3b;
+
+    border-radius: 12px;
+
+    padding: 18px;
+
+    overflow-x: auto;
+
+    color: #00e676;
+
+    margin: 15px 0;
+}
+
+code {
+    background-color: rgba(255, 255, 255, 0.08);
+
+    color: #38bdf8;
+
+    padding: 3px 6px;
+
+    border-radius: 6px;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 13px;
+}
+
+/* =========================
+   MENSAGEM FINAL
+========================= */
+
+.final-message {
+    text-align: center;
+
+    background-color: #0b0e14;
+
+    border: 1px solid #232d3b;
+    border-radius: 12px;
+
+    padding: 30px;
+}
+
+.final-message h2 {
+    color: #ffffff;
+
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+
+.final-message p {
+    color: #94a3b8;
+
+    margin-bottom: 20px;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    width: 100%;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background-color: #161c24;
+
+    border-top: 1px solid #232d3b;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 12px 18px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .logo img {
+        height: 43px;
+    }
+
+    main {
+        width: 94%;
+
+        padding: 20px 16px;
+
+        border-radius: 18px;
+    }
+
+    .study-header h1 {
+        font-size: 28px;
+    }
+
+    .rule {
+        flex-direction: column;
+    }
+
+    .flow-options {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .challenge {
+        padding: 20px;
+    }
+
+    .final-message {
+        padding: 22px;
+    }
+}
